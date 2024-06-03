@@ -16,14 +16,13 @@ body,html {
 main {
     width: 100vw;
     height: 100vh;
-    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 section#login {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform:translate( -50%, -50%);
     background-color: lightgrey;
     width: 280px;
     height: 525px;
@@ -32,7 +31,6 @@ section#login {
     box-shadow: 0px 0px 30px black;
     transition: width 0.2s, heigth 0.2s;
     transition-timing-function: ease;
-
 }
 
 #imagem {
